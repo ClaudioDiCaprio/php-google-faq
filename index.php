@@ -99,29 +99,47 @@
                 echo '<div class="question">';
                 foreach ($questionBlock as $questionKey => $questionValue) {
                     if ($questionKey == "question") {
-                        echo '<h3>' . $questionValue . '</h3>';
+                        echo "<h3>{$questionValue}</h3>";
                     } else if ($questionKey == "subPoints") {
                         foreach ($questionValue as $subKey => $subValue) {
                             if ($subKey == "subQuestion") {
-                                echo '<h4>' . $subValue . '</h4>';
+                                echo "<h4>{$subValue}</h4>";
                             } else {
                                 echo '<ul>';
                                 foreach ($subValue as $subAnswer) {
-                                    echo '<li>' . $subAnswer . '</li>';
+                                    echo "<li> {$subAnswer}</li>";
                                 };
                                 echo '</ul>';
                             }
                         }
-                    } else {
-                        
-                        
-                        
+                    }  else {
+                        echo '<ul>';
+                        foreach ($questionValue as $paragraph) {
+                            if  (is_array($paragraph)){
+                                echo '<ol>';
+                                foreach ($paragraph as $value) {
+                                    if (is_array($value)) {
+                                        echo '<ol>';
+                                        foreach ($value as $value) {
+                                            echo "<li>{$value}</li>";
+                                        }
+                                        echo '</ol>';
+                                    } else {
+                                        echo "<li>{$value}</li>";
+                                    }
+                                }
+                                echo '</ol>';
+                            } else {
+                                echo "<li>{$paragraph}</li>";
+                            }
+                        };
+                        echo '</ul>';
                     }
                 }
-                
+                echo "</div>";
             }
         ?>
-    </main>
+</main>
 <!-- here main ends -->  
 
 
