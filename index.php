@@ -93,8 +93,34 @@
     </nav>
 <!-- here nav ends -->  
 <!-- here main starts -->
-    <main>
-        
+<main>
+        <?php
+            foreach ($faq as $questionBlock) {
+                echo '<div class="question">';
+                foreach ($questionBlock as $questionKey => $questionValue) {
+                    if ($questionKey == "question") {
+                        echo '<h3>' . $questionValue . '</h3>';
+                    } else if ($questionKey == "subPoints") {
+                        foreach ($questionValue as $subKey => $subValue) {
+                            if ($subKey == "subQuestion") {
+                                echo '<h4>' . $subValue . '</h4>';
+                            } else {
+                                echo '<ul>';
+                                foreach ($subValue as $subAnswer) {
+                                    echo '<li>' . $subAnswer . '</li>';
+                                };
+                                echo '</ul>';
+                            }
+                        }
+                    } else {
+                        
+                        
+                        
+                    }
+                }
+                
+            }
+        ?>
     </main>
 <!-- here main ends -->  
 
