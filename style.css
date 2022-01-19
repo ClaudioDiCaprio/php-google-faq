@@ -50,3 +50,12 @@ nav ul {
     font-weight: 700;
 }
 
+nav ul li {
+    padding: 0;
+    margin-right: 30px;
+}
+
+nav ul a {
+    color: #63676c;
+    text-decoration: none;
+}
