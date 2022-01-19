@@ -4,3 +4,16 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo-cont {
+    display: flex;
+    align-items: center;
+    color: #63676c;
+    font-size: 1.5rem;
+}

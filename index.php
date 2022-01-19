@@ -69,5 +69,15 @@
             ],
         ]
     ?>
+    <header>
+        <div class="logo-cont">
+            <img class="logo" src="img/google_logo.png" alt="">
+            Privacy e Termini
+        </div>
+        <div class="profile">
+            <a href="" class="tools"><i class="fas fa-th"></i></a>
+            <a href="" class="user">A</a href="">
+        </div>
+    </header>
 </body>
 </html>
