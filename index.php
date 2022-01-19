@@ -69,6 +69,7 @@
             ],
         ]
     ?>
+<!-- here header starts -->    
     <header>
         <div class="logo-cont">
             <img class="logo" src="img/google_logo.png" alt="">
@@ -79,5 +80,18 @@
             <a href="" class="user">A</a href="">
         </div>
     </header>
+<!-- here header ends -->
+<!-- here nav starts -->  
+    <nav>
+        <ul>
+            <li><a href="">Introduzione</a></li>
+            <li><a href="">Norme sulla Privacy</a></li>
+            <li><a href="">Termini di Servizio</a></li>
+            <li><a href="">Tecnologie</a></li>
+            <li><a class="active" href="">Domande Frequenti</a></li>
+        </ul>
+    </nav>
+<!-- here nav ends -->  
+
 </body>
 </html>

@@ -39,3 +39,14 @@ header .profile .user {
     border-radius: 100%;
     padding: 4px 9px;
 }
+nav {
+    border-bottom: 1px solid #63676c;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0 20px 20px;
+    font-weight: 700;
+}
+
