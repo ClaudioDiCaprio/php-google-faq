@@ -92,6 +92,12 @@
         </ul>
     </nav>
 <!-- here nav ends -->  
+<!-- here main starts -->
+    <main>
+        
+    </main>
+<!-- here main ends -->  
+
 
 </body>
 </html>
